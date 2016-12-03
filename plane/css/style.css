@@ -1,0 +1,161 @@
+
+
+*{margin: 0; padding: 0; border: none;}
+body,html{height: 100%; overflow:hidden}
+ul{list-style: none;}
+a{ text-decoration: none;}
+
+
+/**********主页面*************/
+.main{
+	width: 480px;
+	height: 100%;
+
+	position: relative;
+	left: 35%;
+	background: url(../images/bg.jpg);
+}
+
+ #list{
+	width: 200px;
+	position: absolute;
+	left: 140px;
+	top: 200px;
+	
+}
+ #list  li{
+	width:198px;
+	height: 65px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background: #ff4400;
+	margin-bottom: 25px;
+	text-align: center;
+	line-height: 65px;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	color: white;
+	
+}
+
+.main #list  li:hover{background: orange;}
+
+
+/******************加载页面*****************/
+
+		
+		/*logo*/
+		.logo{
+			
+			width:428px; 
+			height: 104px;
+		     position: absolute;
+		     left: 26px;
+		     top: 26%;
+			background: url(../images/logo.png) no-repeat ;
+		}
+		
+		
+		
+		/*加载*/
+		.load{
+			
+			width: 192px;
+			height: 41px;
+		   position: absolute;
+		   left: 90px;
+		   top: 60%;
+			
+		}
+		
+
+
+
+/*************** 游戏页面***************************/
+
+
+/*飞机*/
+.plane{
+	width: 98px;
+	height: 122px;
+	background: url(../images/me.png) no-repeat;
+	position: absolute;
+}
+
+
+
+/*分数牌*/
+.score{
+	width: 80px;
+	height: 40px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	position: absolute;
+	background: yellow;
+	right: 0;
+	top: 0;
+}
+
+
+/*子弹*/
+.bullet{
+	width: 7px;
+	height: 18px;
+	position: absolute;
+	background: url(../images/bullet.png) no-repeat;
+}
+
+
+/*子弹爆炸*/
+.boom_bullet{
+	width:41px ;
+	height: 39px;
+	position: absolute;
+	background: url(../images/die1.png)  no-repeat;
+	
+}
+
+/******大型飞机********/
+
+.enemy-large{
+	
+	width: 165px;
+	height: 256px;
+	position: absolute;
+	background: url(../images/plane3.png) no-repeat;
+	
+}
+
+
+
+/******中型飞机********/
+
+.enemy-middle{
+	
+	   width: 70px;
+	   height: 92px;
+	   position: absolute;
+	   background: url(../images/plane2.png) no-repeat;
+	
+}
+
+
+
+/******小型飞机********/
+
+ .enemy-small{
+ 	
+ 	  width:59px ;
+ 	  height: 36px;
+ 	  position: absolute;
+ 	  background: url(../images/plane1.png) no-repeat;
+ 	  
+ }
+
+
+
+
+
+

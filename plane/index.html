@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" / type="text/css">
+	
+		<script type="text/javascript" src="js/bullet.js" ></script>
+		<script type="text/javascript" src="js/crash.js" ></script>
+		<script type="text/javascript" src="js/enemy.js" ></script>
+		<script type="text/javascript" src="js/gameEngine.js" ></script>
+		<script type="text/javascript" src="js/plane.js" ></script>
+	
+		<script>
+			  onload=function(){
+			  	    var oMain=document.getElementById("main_body");
+			  	    var oList=document.getElementById("list");
+			  	    
+			  	    var oLi=oList.getElementsByTagName("li");
+			  	    
+			  	    for ( var i=0 ; i<oLi.length ; i++) {
+			  	    	    
+			  	    	    oLi[i].onclick=function(){
+			  	    	    	    
+			  	    	    	     var fireInterval=this.value;
+		  	    	    	 	
+								//1.移除菜单list
+								oList.parentNode.removeChild(oList);
+					  	    	    	
+			  	    	    	 plane.fireInterval=fireInterval-0;
+			  	    	    	 
+			  	    	    	 
+			  	    	    	 gameEngine.init().start();
+			  	    	    	
+			  	    	    }
+			  	    	    
+			  	    }
+			  	
+			  	
+		
+			  }
+		</script>
+	</head>
+	<body>
+		<div class="main" id="main_body">
+			 <ul id="list">
+			    	<li value="1000">非常困难</li>
+			    	<li value="500">困难</li>
+			    	<li value="250">一般</li>
+			    	<li value="120">简单</li>
+			 </ul>
+		</div>
+		
+	</body>
+</html>
